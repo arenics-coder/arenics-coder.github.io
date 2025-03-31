@@ -1,0 +1,86 @@
+/* conteúdo experimental... */
+/* p {} - elemento 
+* #id {} - elemento com id, ex: <p id="id">
+* .my-class {} - elementos agrupados em uma classe: <p class="my-class"> e <a class="my-classe">
+* tag[atributo] {} - elemento com o atributo definido
+* tag:estado {} - elemento em determinado estado, ex.: p:hover (com o cursor do mouse em cima)
+*/
+
+/* padding - margem interna do bloco 
+* border - linha sólida externamente ao bloco
+* margin - afastamento da linha sólida aos demais elementos externos
+* 
+* width - largura do elemento
+* background-color - cor de fundo do elemento e do padding
+ * color - a cor do conteúdo de um elemento (geralmente texto
+ * display - define a maneira de dispor um elemento
+ */
+
+
+html {
+  font-size: 16px;
+  font-family: "Space Mono";
+  background-image: url("../imgs/pxfuel.jpg");
+  background-color: black;
+  color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #383838;
+  padding 20px 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+
+  margin: 0;
+  padding: 0 0;
+  color: #ffffff;
+  text-shadow: 6px 6px 3px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+p {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.menu-itens {
+  list-style-type: none;
+  display: block;
+  background-color: #000000;
+  font-size: 20px;
+}
+.menu li>a {
+  color: #ffffff; 
+  text-decoration: none; 
+  padding: 20px 20px; 
+  display: block; 
+}
+.menu li a:hover{
+  background: #333;
+  color: #fff;
+  text-shadow: 0px 0px 5px #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
